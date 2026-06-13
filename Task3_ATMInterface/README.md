@@ -1,24 +1,24 @@
 # Task 3 - ATM Interface
 
 ## Description
-A console-based ATM application built in Java with 5 classes.
+A console based ATM application developed using java having total of 5 classes.
 
 ## Classes
-- ATM.java - Main class, runs the program
-- Account.java - Stores user data and balance
-- Transaction.java - Represents each transaction
-- Bank.java - Manages all accounts and file storage
-- ATMOperations.java - Handles withdraw, deposit, transfer
+- ATM.java - Main class that executes the code
+- Account.java - Holds user information along with balance
+- Transaction.java - For each transaction
+- Bank.java - Holds all the accounts and manages files
+- ATMOperations.java - Performs the withdraw, deposit, transfer operation
 
 ## Features
-- Login with User ID and PIN
-- View Transaction History
-- Withdraw money
-- Deposit money
-- Transfer money between accounts
-- Data persistence (balance saved after every transaction)
+- Login into the system using user id and pin
+- Transaction history viewing 
+- Perform withdrawals
+- Perform deposits
+- Make transfers from one account to another account
+- Persisting data (Balance is saved after every transaction)
 
-## Default Test Accounts
+## Test Accounts
 | User ID | PIN  | Balance    |
 |---------|------|------------|
 | bilal   | 1234 | Rs. 50,000 |
@@ -26,5 +26,5 @@ A console-based ATM application built in Java with 5 classes.
 | sara    | 9999 | Rs. 75,000 |
 
 ## How to Run
-1. Compile: javac Task3_ATMInterface/*.java
-2. Run: java Task3_ATMInterface.ATM
+1. Compilation Command: javac Task3_ATMInterface/*.java
+2. Execution command: java Task3_ATMInterface.ATM

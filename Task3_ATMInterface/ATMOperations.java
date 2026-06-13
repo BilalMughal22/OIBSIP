@@ -14,7 +14,7 @@ public class ATMOperations {
         this.scanner = new Scanner(System.in);
     }
 
-    // Show transaction history
+    // Shows transaction history
     public void showTransactionHistory() {
         System.out.println("\n===== Transaction History =====");
         if (account.getTransactionHistory().isEmpty()) {

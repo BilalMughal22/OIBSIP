@@ -9,7 +9,7 @@ public class ATM {
         Bank bank = new Bank();
 
         System.out.println("================================");
-        System.out.println("   Welcome to Bilal's ATM 🏧   ");
+        System.out.println("   Welcome to  ATM 🏧   ");
         System.out.println("================================");
 
         // Login

@@ -67,7 +67,7 @@ public class Bank {
         }
     }
 
-    // Save accounts to file
+    // Saveing accounts to file
     public void saveAccounts() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(ACCOUNTS_FILE))) {
             for (Account account : accounts.values()) {
@@ -81,7 +81,7 @@ public class Bank {
         }
     }
 
-    // Save transactions to file
+    // Saving transactions to file
     public void saveTransactions() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(TRANSACTIONS_FILE))) {
             for (Account account : accounts.values()) {
@@ -102,12 +102,12 @@ public class Bank {
         return accounts.get(userID);
     }
 
-    // Check if account exists
+    // Checking if account exists
     public boolean accountExists(String userID) {
         return accounts.containsKey(userID);
     }
 
-    // Transfer between two accounts
+    // Transfer amount between two accounts
     public boolean transfer(Account from, Account to, double amount) {
         if (from.getBalance() >= amount) {
             from.setBalance(from.getBalance() - amount);
