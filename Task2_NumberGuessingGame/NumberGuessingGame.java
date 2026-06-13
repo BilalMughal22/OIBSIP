@@ -11,16 +11,16 @@ public class NumberGuessingGame {
 
          int input = JOptionPane.showOptionDialog(
         null,                        
-"Guess Number Between 1-100",          
-    "Number Guessing Game",             
-    JOptionPane.YES_NO_OPTION,     
-    JOptionPane.QUESTION_MESSAGE,  
-    null,                          
-    new Object[]{"Start Game", "Exit"},  
-    "Start Game"                  
-    );  
+            "Guess Number Between 1-100",    //Message
+            "Number Guessing Game",         //Title
+            JOptionPane.YES_NO_OPTION,     
+            JOptionPane.QUESTION_MESSAGE,  
+            null,                          
+            new Object[]{"Start Game", "Exit"}, //Buttons  
+            "Start Game" //Default Button                  
+            );  
 
-    if(input == 0){
+    if(input == 0){        //checks for Empty Input
 
     do {
 
@@ -48,7 +48,7 @@ public class NumberGuessingGame {
 
                 JOptionPane.showMessageDialog(null, "Correct! You guessed in "+ attempts +" attempts");
  
-                  } else if (userGuess < numberToGuess) {
+                  } else if (userGuess < numberToGuess) {  //Checks Guessed Number is Small or not  
                         JOptionPane.showMessageDialog(null, "Too Low! Try Higher");
                          } else {    
                             JOptionPane.showMessageDialog(null, "Too High! Try Lower");
@@ -58,15 +58,12 @@ public class NumberGuessingGame {
 
         }}
 
-        playAgain = JOptionPane.showInputDialog("Play Again ?? (Yes/No)");
+        playAgain = JOptionPane.showInputDialog("Play Again ?? (Yes/No)");  
 
     }   while (playAgain.equalsIgnoreCase("Yes"));
 
         JOptionPane.showMessageDialog(null, "Game Over! Your Final Score: " + score);
 
-    }}
-
-
-   
+    }}   
 
 }
